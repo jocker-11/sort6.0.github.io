@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>完成</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="CodeStyle.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--字體-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--字體-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet"> <!--字體-->
+</head>
+<body>
+
+    <div id="nav_style">
+    <nav id="menu">
+        <ul>
+            <li style="margin-top: 0px;"><a href="main screen.html"><img src="./logo2file/logo_2.png"></a></li>
+            <li><a href="bubble sort.html">泡沫排序</a></li>
+            <li><a href="function box.html">起手式</a></li>
+            <li><a href="input.html">輸入與資料型態</a></li>
+            <li><a href="array.html">陣列</a></li>
+            <li><a href="for.html">迴圈</a></li>
+            <li><a href="if.html">條件式</a></li>
+            <li><a href="box.html">簡易打包</a></li>
+        </ul>
+    </nav>
+    </div>
+    <!--主選單-->
+
+    <div class="title_style">
+        <sapn class="h_decoration">恭喜你，完成了~~!!!</sapn>
+    </div>
+
+    <div class="center">
+        <section class="TextSize">
+            <h3>完成</h3>
+            <p>終於，你完成了用 C 語言寫出泡沫排序了，下面是泡沫排序完整的 C 語言程式碼。</p>
+        </section>
+        <hr>
+            <section>
+                <div class="TestCode">
+                    <h3>Your first code</h3>
+                    <form action="explain.js" method="get">
+                    <div class="example_code">
+                        <code class="CodeColor_1">#include ＜stdio.h＞</code>
+                        <br>
+                        <code  class="CodeColor_2">int</code> <code class="CodeColor_1">main(void){</code>
+                        <blockquote>
+                            <code  class="CodeColor_2">int</code>
+                            <code  class="CodeColor_1">box[</code>
+                            <code  class="CodeColor_2">4</code>
+                            <code  class="CodeColor_1">], i, n, y ;</code>
+                        </blockquote>
+                        <code class="CodeColor_2"><blockquote>printf</code> <code class="CodeColor_1">("請輸入任意且互不相等的四個數字： \n") ;</blockquote></code>
+                        <blockquote>
+                            <code  class="CodeColor_2">for</code>
+                            <code class="CodeColor_1">( i=</code>
+                            <code class="CodeColor_2">0</code>
+                            <code class="CodeColor_1">; </code>
+                            <code class="CodeColor_1">i＜</code>
+                            <code class="CodeColor_2">4</code>
+                            <code class="CodeColor_1">; </code>
+                            <code class="CodeColor_1">i</code>
+                            <code class="CodeColor_2">++</code>
+                            <code class="CodeColor_1">)</code>
+                            <code class="CodeColor_1">{</code>
+                        </blockquote>
+                        <!--for ( i= 0 ; i＜ 4 ; i ++ ) {-->
+                        <blockquote><blockquote><code class="CodeColor_2">scanf</code> <code class="CodeColor_1">( "%d", &box[ i ] ) ;</code></blockquote></blockquote>
+                        <blockquote><code class="CodeColor_1">}</code>
+                        <br>
+                            <code  class="CodeColor_2">for</code>
+                            <code class="CodeColor_1">( i=</code>
+                            <code class="CodeColor_2">0</code>
+                            <code class="CodeColor_1">; </code>
+                            <code class="CodeColor_1">i＜</code>
+                            <code class="CodeColor_2">3</code>
+                            <code class="CodeColor_1">; </code>
+                            <code class="CodeColor_1">i</code>
+                            <code class="CodeColor_2">++</code>
+                            <code class="CodeColor_1">)</code>
+                            <code class="CodeColor_1">{</code>
+                        <blockquote>
+                            <!--for ( i= 0 ; i＜ 3 ; i ++ ) {-->
+
+                            <code  class="CodeColor_2">for</code>
+                            <code class="CodeColor_1">( n</code>
+                            <code class="CodeColor_2">=0</code>
+                            <code class="CodeColor_1">; </code>
+                            <code class="CodeColor_1">n＜</code>
+                            <code class="CodeColor_2">3</code>
+                            <code class="CodeColor_1">; </code>
+                            <code class="CodeColor_1">n</code>
+                            <code class="CodeColor_2">++</code>
+                            <code class="CodeColor_1">)</code>
+                            <code class="CodeColor_1">{</code>
+                        </blockquote>
+                            <!--for ( n= 0 ; n＜ 3 ; n ++ ) {-->
+
+                        <blockquote><blockquote> 
+                            <code  class="CodeColor_2">if</code>
+                            <code class="CodeColor_1">( </code>
+                            <code  class="CodeColor_1">box[</code>
+                            <code  class="CodeColor_1">n</code>
+                            <code  class="CodeColor_1">]＞</code>
+                            <code  class="CodeColor_1">box[ </code>
+                            <code  class="CodeColor_1">n</code>
+                            <code  class="CodeColor_2">+1</code>
+                            <code  class="CodeColor_1"> ]</code>
+                            <code  class="CodeColor_1">) {</code>
+                                <blockquote>
+                                    <code  class="CodeColor_1">y</code>
+                                    <code  class="CodeColor_2">=</code>
+                                    <code  class="CodeColor_1">box [ </code>
+                                    <code  class="CodeColor_1">n</code>
+                                    <code  class="CodeColor_2">+1</code>
+                                    <code  class="CodeColor_1"> ] ;</code>
+                                    <br>
+                                    <code  class="CodeColor_1">box [ </code>
+                                    <code  class="CodeColor_1">n</code>
+                                    <code  class="CodeColor_2">+1</code>
+                                    <code  class="CodeColor_1"> ]</code>
+                                    <code  class="CodeColor_2"> = </code>
+                                    <code  class="CodeColor_1">box [ </code>
+                                    <code  class="CodeColor_1">n</code>
+                                    <code  class="CodeColor_1"> ] ;</code>
+                                    <br>
+                                    <code  class="CodeColor_1">box [ </code>
+                                    <code  class="CodeColor_1">n</code>
+                                    <code  class="CodeColor_1"> ]</code>
+                                    <code  class="CodeColor_2">=</code>
+                                    <code  class="CodeColor_1">y ;</code>
+                                </blockquote>
+                            <code class="CodeColor_1">}</code>
+                        </blockquote></blockquote>
+                        <!--if ( box[ n ]＞ box[ n+1 ] ) {-->
+
+                        <blockquote><code class="CodeColor_1">}</code></blockquote>
+                        <code class="CodeColor_1">}</code>
+                        <br>
+                            <code  class="CodeColor_2">for</code>
+                            <code class="CodeColor_1">( i=</code>
+                            <code class="CodeColor_2">0</code>
+                            <code class="CodeColor_1">; </code>
+                            <code class="CodeColor_1">i＜</code>
+                            <code class="CodeColor_2">4</code>
+                            <code class="CodeColor_1">; </code>
+                            <code class="CodeColor_1">i</code>
+                            <code class="CodeColor_2">++</code>
+                            <code class="CodeColor_1">)</code>
+                            <code class="CodeColor_1">{</code>
+                        <blockquote><code class="CodeColor_2">printf</code> <code class="CodeColor_1">( "%d", &box [ i ] ) ;</code></blockquote>
+                        <code class="CodeColor_1">}</code>
+                        <br>
+                        <!--for ( i= 0 ; i＜ 4 ; i ++ ) {-->
+                        <code class="CodeColor_1">return 0 ;</code>
+                        <br>
+                        <code class="CodeColor_1">} </code>
+                    </div>
+                    </form>
+                </div>
+                <!--測試-->
+    </div>
+
+</body>
+</html>

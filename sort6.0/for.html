@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for 迴圈</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="CodeStyle.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--字體-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--字體-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet"> <!--字體-->
+</head>
+<body>
+
+    <div id="nav_style">
+    <nav id="menu">
+        <ul>
+            <li style="margin-top: 0px;"><a href="main screen.html"><img src="./logo2file/logo_2.png"></a></li>
+            <li><a href="bubble sort.html">泡沫排序</a></li>
+            <li><a href="function box.html">起手式</a></li>
+            <li><a href="input.html">輸入與資料型態</a></li>
+            <li><a href="array.html">陣列</a></li>
+            <li><a href="for.html" class="LinkColor">迴圈</a></li>
+            <li><a href="if.html">條件式</a></li>
+            <li><a href="box.html">簡易打包</a></li>
+        </ul>
+    </nav>
+    </div>
+    <!--主選單-->
+
+    <div class="title_style">
+        <sapn class="h_decoration">for迴圈</sapn>
+    </div>
+
+    <div class="center">
+        <section class="TextSize">
+            <p>在剛才的Test中，你在 scanf 的 " " 裡塞了四個變數，不覺得感覺有點重複嗎？有沒有一個語法能重複做一個動作，
+                且能限制重複的次數，欸 ~ 問了就有，這個語法叫迴圈，迴圈有分 for 迴圈與 while 迴圈，在這裡我只會說 for 迴圈
+                的用法，while 迴圈會跳過。
+            </p>
+        </section>
+        <section class="TextSize">
+            <h3>for迴圈</h3>
+            <p>先讓我們看一下 for 迴圈的句法：</p>
+            <div class="ExplainCode">
+                <div class="example_code">
+                    <code  class="CodeColor_1">for(初始算式; 條件算式; 控制算式) { } </code>
+                </div>
+            </div>
+            <ul>
+                <li>初始算式：一般為條件算式會用到的變數初始值</li>
+                <li>條件算式：判斷是否要繼續執行迴圈</li>
+                <li>控制算式：調整條件算式的變數數值</li>
+            </ul>
+            <p>舉個例子，如果我們要輸出 Hello World！！ 三次，在還沒學迴圈前，你想到的方式應該就直接用 printf 輸出三次吧，
+                但現在，你學到 for 迴圈了，學會迴圈會讓你省去寫重複動作的時間。下面為用 for 迴圈輸出三次 Hello World！！：
+            </p>
+            <div class="ExplainCode">
+                <div class="example_code">
+                    <code  class="CodeColor_2">for</code>
+                    <code class="CodeColor_1">( i=</code>
+                    <code class="CodeColor_2">0</code>
+                    <code class="CodeColor_1">;</code>
+                    <code class="CodeColor_1">i＜</code>
+                    <code class="CodeColor_2">3</code>
+                    <code class="CodeColor_1">;</code>
+                    <code class="CodeColor_1">i</code>
+                    <code class="CodeColor_2">++</code>
+                    <code class="CodeColor_1">)</code>
+                    <code class="CodeColor_1">{</code>
+                    <br>
+                    <blockquote><code class="CodeColor_2">printf</code> <code class="CodeColor_1">("Hello World！！\n");</code></blockquote>
+                    <code class="CodeColor_1">}</code>
+                 </div>
+            </div>
+            <p>看完上面的例子或許你還是看不懂，沒關係，那我就再講詳細一點吧~</p>
+                 <ul>
+                    <li>i=0，因為 0＜3 條件成立，所以先輸出第一個 Hello World！！，再 i++ ( 就是 i = i + 1 的意思，反之 i - - 就是 i = i - 1 的意思 )。現在 i = 1 </li>
+                    <li>i=1，因為 1＜3 條件成立，所以先輸出第二個 Hello World！！，再 i++。現在 i = 2</li>
+                    <li>i=2，因為 2＜3 條件成立，所以先輸出第三個 Hello World！！，再 i++。現在 i = 3</li>
+                    <li>i=3，因為 3=3 條件不成立，所以該迴圈中止，共執行三次</li>
+                 </ul>
+
+                <hr>
+                <section>
+                    <div class="TestCode">
+                        <h3>Try it</h3>
+                        <p>繼續完成泡沫排序的程式碼，這次的測驗也是要你讓使用者輸入四個數字，不一樣的是，這次要用的是陣列，為此你需要執行六個動作：</p>
+                        <ol class="TextSize">
+                            <li>宣告 i 和 n 兩個整數變數</li>
+                            <li>用for迴圈重複做輸入的動作，設 i=0 為初始值、並用 i 當作 box 的索引值</li>
+                            <li>將 scanf 改成 ("%d",&box[i])</li>
+                            <li>下兩行，開始要做泡沫排序了，這裡會需要兩層 for 迴圈，第一層，也就是最外層，<b>是控制整個系統的排序次數</b>，因為共有四個數字，故<b>次數為三次</b>，這層設<b> i=0 為初始值。</b></li>
+                            <li>接下來為第二層 for 迴圈，這層是控制每個數字前後比較的次數，一樣為三次，不一樣的是，<b>這裡的設 n=0 為初始值</b>，因為每個數字都是前後比較三次，<b>故次數也是三次。</b></li>
+                            <li>完成後按 "提交"，確認答案</li>
+                            <li>答案確定正確後按 NEXT，進入下個單元</li>
+                        </ol>
+                        <form action="explain.js" method="get">
+                        <div class="example_code">
+                            <code class="CodeColor_1">#include ＜stdio.h＞</code>
+                            <br>
+                            <code  class="CodeColor_2">int</code> <code class="CodeColor_1">main(void){</code>
+                            <blockquote><input type="text" name="text" size="40";  class="InputCode" id="for_1" value="int box[4];"><code class="CodeColor_2"> // 加上 i 和 n 整數變數;</code></blockquote>
+
+                            <code class="CodeColor_2"><blockquote>printf</code> <code class="CodeColor_1">("請輸入任意且互不相等的四個數字： \n");</blockquote></code>
+
+                            <blockquote><input type="text" name="text" size="30"; class="CommentText" id="for_2" value="// 用for迴圈做重複輸入的動作"></blockquote>
+
+                            <blockquote><blockquote><input type="text" name="text" size="30"; class="InputCode" id="for_3" value="scanf (&quot;%d%d%d%d&quot;,&box[0].&box[1],&box[2],&box[3]); "><code class="CodeColor_2"> // 改輸入的形式;</code></blockquote></blockquote>
+
+                            <blockquote><input type="text" name="text" size="30"; class="CommentText" id="for_4" value="// 大括弧"></blockquote>
+
+                            <blockquote><input type="text" name="text" size="30"; class="CommentText" id="for_5" value="// 第一層for迴圈"></blockquote>
+
+                            <blockquote><blockquote><input type="text" name="text" size="30"; class="CommentText" id="for_6" value="// 第二層for迴圈"></blockquote></blockquote>
+
+                            <blockquote><blockquote><input type="text" name="text" size="30"; class="CommentText" id="for_7" value="// 第二層的大括弧"></blockquote></blockquote>
+
+                            <blockquote><input type="text" name="text" size="30"; class="CommentText" id="for_8" value="// 第一層的大括弧"></blockquote>
+                            <code class="CodeColor_1"><blockquote>return 0;</blockquote></code>
+                            <code class="CodeColor_1">} </code>
+                        </div>
+                            <button type="button" id="ans_submit">提交</button>
+                            <button type="button" id="look_ans">看答案</button>
+                        </form>
+                    </div>
+                    <!--測試-->
+                    <nav style="text-align:center;">
+                        <ul>
+                        <li style="border: solid;"><a href="if.html" target="_parent">NEXT</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <!--NEXT-->
+        </section>
+        <script src="ans_4.js"></script>
+    </div>
+</body>
+</html

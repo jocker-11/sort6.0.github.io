@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if 條件式</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="CodeStyle.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--字體-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--字體-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet"> <!--字體-->
+</head>
+<body>
+
+    <div id="nav_style">
+    <nav id="menu">
+        <ul>
+            <li style="margin-top: 0px;"><a href="main screen.html"><img src="./logo2file/logo_2.png"></a></li>
+            <li><a href="bubble sort.html">泡沫排序</a></li>
+            <li><a href="function box.html">起手式</a></li>
+            <li><a href="input.html">輸入與資料型態</a></li>
+            <li><a href="array.html">陣列</a></li>
+            <li><a href="for.html">迴圈</a></li>
+            <li><a href="if.html">條件式</a></li>
+            <li><a href="box.html">簡易打包</a></li>
+        </ul>
+    </nav>
+    </div>
+    <!--主選單-->
+
+    <div class="title_style">
+        <sapn class="h_decoration">if條件式</sapn>
+    </div>
+
+    <div class="center">
+        <section class="TextSize">
+            <h3>條件式</h3>
+            <p>恭喜你，學會了輸出、輸入、陣列與迴圈的使用，接下要學的是 if 條件式，再加油一下吧~ if 條件式主要有三個型態，
+                分別為 if、if-else、if-else if。
+            </p>
+            <ol>
+                <li><h3>if</h3></li>
+                <p>A 為條件算式，當 A 事件成立時，會做 { } 裡的指令</p>
+                <div class="ExplainCode">
+                    <div class="example_code">
+                        <code  class="CodeColor_2">if</code>
+                        <code class="CodeColor_1">(A)</code>
+                        <code class="CodeColor_1">{</code>
+                        <blockquote><code class="CodeColor_1">達成 A 條件時要做的事</code></blockquote>
+                        <code class="CodeColor_1">}</code>
+                    </div>
+                </div>
+                <div class="ExplainCode">
+                    <h3>例子</h3>
+                    <div class="example_code">
+                        <code  class="CodeColor_2">if</code>
+                        <code class="CodeColor_1">(</code>
+                        <code  class="CodeColor_2">1</code>
+                        <code class="CodeColor_1">＞</code>
+                        <code  class="CodeColor_2">0</code>
+                        <code  class="CodeColor_1">)</code>
+                        <blockquote><code class="CodeColor_2">printf</code> <code class="CodeColor_1">("Hello World！！\n");</code></blockquote>
+                        <code class="CodeColor_1">}</code>
+                    </div>
+                </div>
+                <p>上面的例子是說：<b>如果 1＞0 時，就輸出 Hello World！！</b>，因為此事件成立，
+                    所以結果是輸出 Hello World！！ 
+                </p>
+                <!--第一部分-->
+
+                <li><h3>if-else</h3></li>
+                <p>這裡多了一個 else，其實就是讓判斷式多一個選擇條件，一開始只有當 if 條件成立時才會有事要做，但加上了 else，
+                    代表：<b>如果 A 事件成立時，就做 if 裡的事，若 A 事件不成立時，就做 else 裡的事。</b>
+                </p>
+                <div class="ExplainCode">
+                    <div class="example_code">
+                        <code  class="CodeColor_2">if</code>
+                        <code class="CodeColor_1">(A)</code>
+                        <code class="CodeColor_1">{</code>
+                        <blockquote><code class="CodeColor_1">達成 A 條件時要做的事</code></blockquote>
+                        <code class="CodeColor_1">}</code>
+                        <br>
+                        <code  class="CodeColor_2">else</code>
+                        <code class="CodeColor_1">{</code>
+                        <blockquote><code class="CodeColor_1">沒達成 A 條件時就要做的事</code></blockquote>
+                        <code class="CodeColor_1">}</code>
+                    </div>
+                </div>
+                <div class="ExplainCode">
+                    <h3>例子</h3>
+                    <div class="example_code">
+                        
+                        <code  class="CodeColor_2">if</code>
+                        <code class="CodeColor_1">(</code>
+                        <code  class="CodeColor_2">1</code>
+                        <code class="CodeColor_1">＞</code>
+                        <code  class="CodeColor_2">2</code>
+                        <code  class="CodeColor_1">)</code>
+                        <blockquote><code class="CodeColor_2">printf</code> <code class="CodeColor_1">("不會出現這個啦\n");</code></blockquote>
+                        <code class="CodeColor_1">}</code>
+                        <br>
+                        <code  class="CodeColor_2">else</code>
+                        <code class="CodeColor_1">{</code>
+                            <blockquote><code class="CodeColor_2">printf</code> <code class="CodeColor_1">("是會出現這個啦\n");</code></blockquote>
+                        <code class="CodeColor_1">}</code>
+                    </div>
+                </div>
+                <p>上面的例子：因為 if 裡的事件不成立，所以執行 else 裡的指令，你可以把這段程式碼放進編譯器執行看看喔~ </p>
+                <!--第二部分-->
+                
+                <li><h3>if-else if</h3></li>
+                <p>多了 else if，這是另一個條件判斷，與 else 不同的是，else 是在 if 事件不成立時就會做的事；但 else if 
+                    則是當 if 事件不成立時，電腦會再去尋問 else if 的條件與事件是否相符，如果相符就會做 else if 的事，反之就是甚麼事都不會發生。
+                </p>
+                <div class="ExplainCode">
+                    <div class="example_code">
+                        <code  class="CodeColor_2">if</code>
+                        <code class="CodeColor_1">(A)</code>
+                        <code class="CodeColor_1">{</code>
+                        <blockquote><code class="CodeColor_1">達成 A 條件時要做的事</code></blockquote>
+                        <code class="CodeColor_1">}</code>
+                        <br>
+                        <code  class="CodeColor_2">else if</code>
+                        <code class="CodeColor_1">(B)</code>
+                        <code class="CodeColor_1">{</code>
+                        <blockquote><code class="CodeColor_1">事件若沒達成 A 條件，卻達成 B 條件時，就會做的事</code></blockquote>
+                        <code class="CodeColor_1">}</code>
+                    </div>
+                </div>
+                <div class="ExplainCode">
+                    <h3>例子</h3>
+                    <div class="example_code">
+                        <code  class="CodeColor_2">if</code>
+                        <code class="CodeColor_1">(</code>
+                        <code  class="CodeColor_2">4</code>
+                        <code class="CodeColor_1">==</code>
+                        <code  class="CodeColor_2">4</code>
+                        <code  class="CodeColor_1">) {</code>
+                        <blockquote><code class="CodeColor_2">printf</code> <code class="CodeColor_1">("會出現這個\n");</code></blockquote>
+                        <blockquote><code class="CodeColor_2">// == 是等於的意思</code></blockquote>
+                        <code class="CodeColor_1">}</code>
+                        <br>
+                        <code  class="CodeColor_2">else if</code>
+                        <code class="CodeColor_1">(</code>
+                        <code  class="CodeColor_2">3</code>
+                        <code class="CodeColor_1">＞</code>
+                        <code  class="CodeColor_2">2</code>
+                        <code  class="CodeColor_1">)</code>
+                        <code class="CodeColor_1">{</code>
+                            <blockquote><code class="CodeColor_2">printf</code> <code class="CodeColor_1">("即使這條件是對的，程式依舊會優先判斷事件是否滿足 if 條件喔\n");</code></blockquote>
+                        <code class="CodeColor_1">}</code>
+                    </div>
+                </div>
+                <!--第三部分-->
+            </ol>
+            <ul>
+                <p>學到這裡，先幫你整理條件式的注意事項：</p>
+                <li>只有在條件與事件成立時，才會做條件式裡的事</li>
+                <li>程式一律優先判斷 if 的條件，只要確定 if 條件成立，不管 else if 條件是否成立，程式會忽略 if 後面的判斷式，只執行 if 的事</li>
+                <li>只有在 if 條件不成立時，程式才會往後去找其他的判斷式</li>
+            </ul>
+
+            <hr>
+            <section>
+                <div class="TestCode">
+                    <h3>Try it</h3>
+                    <p>繼續完成泡沫排序的程式碼，這次的測驗希望你用 if 條件式做出<b>當前者數值>後者數值時，兩者位置交換</b>，為此你需要執行三個動作：</p>
+                    <ol class="TextSize">
+                        <li>在第二層 for 迴圈裡加上 if 條件式，條件為box[n]>box[n+1]</li>
+                        <li>完成後按 "提交"，確認答案</li>
+                        <li>答案確定正確後按 NEXT，進入下個單元</li>
+                    </ol>
+                    <form action="explain.js" method="get">
+                    <div class="example_code">
+                        <code class="CodeColor_1">#include ＜stdio.h＞</code>
+                        <br>
+                        <code  class="CodeColor_2">int</code> <code class="CodeColor_1">main(void){</code>
+                        <blockquote>
+                            <code  class="CodeColor_2">int</code>
+                            <code  class="CodeColor_1">box[</code>
+                            <code  class="CodeColor_2">4</code>
+                            <code  class="CodeColor_1">], i, n ;</code>
+                        </blockquote>
+                        <code class="CodeColor_2"><blockquote>printf</code> <code class="CodeColor_1">("請輸入任意且互不相等的四個數字： \n") ;</blockquote></code>
+                        <blockquote>
+                            <code  class="CodeColor_2">for</code>
+                            <code class="CodeColor_1">( i=</code>
+                            <code class="CodeColor_2">0</code>
+                            <code class="CodeColor_1">; </code>
+                            <code class="CodeColor_1">i＜</code>
+                            <code class="CodeColor_2">4</code>
+                            <code class="CodeColor_1">; </code>
+                            <code class="CodeColor_1">i</code>
+                            <code class="CodeColor_2">++</code>
+                            <code class="CodeColor_1">)</code>
+                            <code class="CodeColor_1">{</code>
+                        </blockquote>
+                        <blockquote><blockquote><code class="CodeColor_2">scanf</code> <code class="CodeColor_1">( "%d", &box[ i ] ) ;</code></blockquote></blockquote>
+                        <blockquote><code class="CodeColor_1">}</code>
+                        <br>
+                            <code  class="CodeColor_2">for</code>
+                            <code class="CodeColor_1">( i=</code>
+                            <code class="CodeColor_2">0</code>
+                            <code class="CodeColor_1">; </code>
+                            <code class="CodeColor_1">i＜</code>
+                            <code class="CodeColor_2">3</code>
+                            <code class="CodeColor_1">; </code>
+                            <code class="CodeColor_1">i</code>
+                            <code class="CodeColor_2">++</code>
+                            <code class="CodeColor_1">)</code>
+                            <code class="CodeColor_1">{</code>
+                        <blockquote>
+                            <code  class="CodeColor_2">for</code>
+                            <code class="CodeColor_1">( n=</code>
+                            <code class="CodeColor_2">0</code>
+                            <code class="CodeColor_1">; </code>
+                            <code class="CodeColor_1">n＜</code>
+                            <code class="CodeColor_2">3</code>
+                            <code class="CodeColor_1">; </code>
+                            <code class="CodeColor_1">n</code>
+                            <code class="CodeColor_2">++</code>
+                            <code class="CodeColor_1">)</code>
+                            <code class="CodeColor_1">{</code>
+                        </blockquote>
+                        <blockquote><blockquote><input type="text" name="text" size="30"; class="CommentText" id="if_1" value="// if判斷式"></blockquote></blockquote>
+                        <blockquote><blockquote><input type="text" name="text" size="30"; class="CommentText" id="if_2" value="// if的大括弧"></blockquote></blockquote>
+                        <blockquote><code class="CodeColor_1">}</code></blockquote>
+                        <code class="CodeColor_1">}</code>
+                        <br>
+                        <code class="CodeColor_1">return 0;</code>
+                        <br>
+                        <code class="CodeColor_1">} </code>
+                    </div>
+                        <button type="button" id="ans_submit">提交</button>
+                        <button type="button" id="look_ans">看答案</button>
+                </div>
+                <!--測試-->
+                <nav style="text-align:center;">
+                    <ul>
+                    <li style="border: solid;"><a href="box.html" target="_parent">NEXT</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <!--NEXT-->
+        </section>
+        <script src="ans_5.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body{
+    font-family: 'Noto Serif TC', serif;
+    /* background-color:lightcyan;  */
+} /*字體*/
+code{
+    display: inline;
+}
+
+#menu{
+    font-size:20px;
+    border-radius: 5px;
+    text-align: center;
+    word-spacing: 20px;
+}
+#nav_style{
+    margin: 50px 50px 50px 0px;
+} 
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    display: inline;
+}
+nav a:link,nav a:visited{
+    color: black;
+}
+nav a:hover{
+    color:cornflowerblue;
+}
+/*列表*/
+
+a:link,a:visited{
+    text-decoration: none;
+    color:aliceblue;
+}
+a:hover{
+    color:black;
+}
+a{
+    padding:5px 6px;
+    border-radius: 5px;
+}
+/*連結表現*/
+
+.center{
+    margin: auto;
+    width: 60%;
+}
+.title_style{
+    background-color:#eeeeee;
+}
+.h_decoration{
+    /* margin: auto; */
+    padding-left: 290px;
+    font-size:x-large;
+    line-height: 2;
+}
+.TextSize{
+    font-size:medium;
+    line-height: 40px;
+}
+/*按鈕、文字設定*/
+

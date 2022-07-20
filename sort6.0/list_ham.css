@@ -1,0 +1,95 @@
+/* body, ul { margin: 0; } */
+
+*{ box-sizing: border-box; }
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a { 
+    text-decoration: none; 
+}
+/* 
+.ham_list {
+    background-color: #eeeeee;
+    box-shadow: 0px 1px 3px #00000088;  
+} */
+
+nav::after {
+    content: "";
+    display:block;
+    clear: both;
+}
+
+nav.logo {
+    float: left;
+    padding-left: 40px;
+    line-height: 50px;
+}
+
+input {
+    display: none;
+}
+
+label {
+    float: right;
+    padding-right: 20px;
+    line-height: 10px;
+}
+
+label .ham_img {
+    width: 30px;   
+    vertical-align: middle;
+}
+
+.menu{
+    clear: both;
+    /* background: #fff; */
+}
+
+.menu li{
+    text-align: center;
+    /* border-bottom: 1px solid #efefef; */
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    color:cornflowerblue;
+} 
+
+.menu{
+    max-height: 0;
+    overflow: hidden;
+    transition: 5s; /* 動畫秒數 */
+}
+
+ input:checked ~ .menu {
+    /*當list被點，就會讓menu原本hideen的部分展出*/
+    max-height: 350px;
+    /*一個list為50px，所以這裡設350px*/
+ }
+
+ /* 768px 以上的螢幕寬樣式 */
+
+ @media screen and ( min-width:768px ) {
+    .ham_img {
+        display: none;
+    }
+    .menu {
+        float: right;
+        clear: none;
+        max-height: 50px;
+    }
+    .menu li {
+        display: inline-block;
+    }
+    .menu li a {
+        padding: 0 15px;  
+    }
+ }

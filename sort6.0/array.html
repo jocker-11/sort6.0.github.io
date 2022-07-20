@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <title>陣列 Array</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="CodeStyle.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--字體-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--字體-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet"> <!--字體-->
+</head>
+<body>
+
+    <div id="nav_style">
+    <nav id="menu">
+        <ul>
+            <li style="margin-top: 0px;"><a href="main screen.html"><img src="./logo2file/logo_2.png"></a></li>
+            <li><a href="bubble sort.html">泡沫排序</a></li>
+            <li><a href="function box.html">起手式</a></li>
+            <li><a href="input.html">輸入與資料型態</a></li>
+            <li><a href="array.html" class="LinkColor">陣列</a></li>
+            <li><a href="for.html">迴圈</a></li>
+            <li><a href="if.html">條件式</a></li>
+            <li><a href="box.html">簡易打包</a></li>
+        </ul>
+    </nav>
+    </div>
+    <!--主選單-->
+
+    <div class="title_style">
+        <sapn class="h_decoration">陣列Array</sapn>
+    </div>
+    
+    <div class="center">
+        <section class="TextSize">
+            <p>剛剛我們用 scanf 輸入四個數字作排序的元素，然而，如果是輸入四個單獨的變數的話，要怎麼實現當前面數字大於後面數字時，兩者位置前後交換的動作呢？
+                這正是這單元要介紹的新語法，陣列。
+            </p>
+        </section>
+        <section  class="TextSize">
+            <h3>陣列</h3>
+            <p>陣列是一個資料集合，能將相同型別的元素放在一起。與一開始說的變數不同，一個變數只能存取一個數值，但陣列不同，一個陣列可以存取兩個以上且相同型別的數值，以下為陣列的句法：</p>
+            <div class="ExplainCode">
+                <div class="example_code">
+                    <code  class="CodeColor_1">資料型別  陣列名稱[索引值];</code>
+                </div>
+            </div>
+            <ol>
+                <li><b>賦予陣列數值</b></li>
+                <p>學到這裡，想必你一定知道在 C 語言裡<b> " = "是賦予</b>的意思，需要補充的事要怎麼把數值放進陣列裡。</p>
+                <div class="ExplainCode">
+                    <div class="example_code">
+                        <code  class="CodeColor_2">int</code>
+                        <code class="CodeColor_1">n[</code>
+                        <code class="CodeColor_2">3</code>
+                        <code class="CodeColor_1">]</code>
+                        <code class="CodeColor_2">=</code>
+                        <code class="CodeColor_1">{</code>
+                        <code class="CodeColor_2">1</code>
+                        <code class="CodeColor_1">,</code>
+                        <code class="CodeColor_2">2</code>
+                        <code class="CodeColor_1">,</code>
+                        <code class="CodeColor_2">3</code>
+                        <code class="CodeColor_1">};</code>
+                        <code class="CodeColor_2"> // n[0]=1;  n[1]=2;  n[2]=3;</code>
+                     </div>
+                </div>
+                <p>從上面我們可以得到三個資訊：</p>
+                    <ul>
+                        <li>[ ] 裡的數字代表陣列的容量。</li>
+                        <li>如果要將數值放進陣列裡，必須使用</b> { } </b>將全部數值括起來，數值間用<b> , </b>區隔開。</li> 
+                        <li>當索引值為 3 時，陣列的確存取了三個元素，但是編號卻是從 0 開始。</li>
+                    </ul>
+                    <br>
+                <!--第一部分-->
+
+                <li><b>透過 { } 的個數來決定陣列容量</b></li>
+                <p>除了一開始就設定陣列的容量外，也可以先設定陣列裡的值，藉此來設定陣列的容量。</p>
+                <div class="ExplainCode">
+                    <div class="example_code">
+                        <code  class="CodeColor_2">int</code>
+                        <code class="CodeColor_1">n[</code>
+                        <code class="CodeColor_1">]</code>
+                        <code class="CodeColor_2">=</code>
+                        <code class="CodeColor_1">{</code>
+                        <code class="CodeColor_2">1</code>
+                        <code class="CodeColor_1">,</code>
+                        <code class="CodeColor_2">2</code>
+                        <code class="CodeColor_1">,</code>
+                        <code class="CodeColor_2">3</code>
+                        <code class="CodeColor_1">};</code>
+                        <code class="CodeColor_2"> // n[0]=1;  n[1]=2;  n[2]=3;</code>
+                     </div>
+                </div>
+            </ol>
+            <!--第二部分-->
+
+            <hr>
+            <section>
+                <div class="TestCode">
+                    <h3>Try it</h3>
+                    <p>繼續完成泡沫排序的程式碼，這次的測驗也是要你讓使用者輸入四個數字，不一樣的是，這次要用的是陣列，為此你需要執行四個動作：</p>
+                    <ol class="TextSize">
+                        <li>將四個變數刪除，換成叫 box、索引值為 4 的整數陣列</li>
+                        <li>將 &num_n 的部分改成 &box[n] ，n為任意數</li>
+                        <li>完成後按 "提交"，確認答案</li>
+                        <li>答案確定正確後按 NEXT，進入下個單元</li>
+                    </ol>
+                    <form action="explain.js" method="get">
+                    <div class="example_code">
+                        <code class="CodeColor_1">#include ＜stdio.h＞</code>
+                        <br>
+                        <code  class="CodeColor_2">int</code> <code class="CodeColor_1">main(void){</code>
+
+                        <blockquote><input type="text" name="text" size="40"; class="InputCode" id="array_1" value="int num_1, num_2, num_3, num_4;"><code class="CodeColor_2"> // 改成box[4];</code></blockquote>
+
+                        <code class="CodeColor_2"><blockquote>printf</code> <code class="CodeColor_1">("請輸入任意且互不相等的四個數字：");</blockquote></code>
+
+                        <blockquote><input type="text" name="text" size="50"; class="InputCode" id="array_2" value="scanf (&quot;%d%d%d%d&quot;,&num_1, &num_2, &num_3, &num_4); "><code class="CodeColor_2"> // 用陣列的方式輸入值;</code></blockquote>
+
+                        <code class="CodeColor_1"><blockquote>return 0;</blockquote></code>
+                        
+                        <code class="CodeColor_1">} </code>
+                    </div>
+                        <button type="button" id="ans_submit">提交</button>
+                        <button type="button" id="look_ans">看答案</button>
+                    </form>
+                </div>
+                <!--測試-->
+
+                <nav style="text-align:center;">
+                    <ul>
+                    <li style="border: solid;"><a href="for.html" target="_parent">NEXT</a></li>
+                    </ul>
+                </nav>
+                <!--NEXT-->
+            </section>
+        </section>
+        <script src="ans_3.js"></script>
+    </div>
+</body>
+</html>

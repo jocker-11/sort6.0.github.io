@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <title>泡沫排序 Bubble Sort</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="ani-8.css" rel="stylesheet" type="text/css"/> <!--第一個動畫-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--字體-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--字體-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet"> <!--字體-->
+
+</head>
+<body>
+
+    <div id="nav_style">
+    <nav id="menu">
+        <ul>
+            <li style="margin-top: 0px;"><a href="main screen.html"><img src="./logo2file/logo_2.png"></a></li>
+            <li><a href="bubble sort.html">泡沫排序</a></li>
+            <li><a href="function box.html">起手式</a></li>
+            <li><a href="input.html">輸入與資料型態</a></li>
+            <li><a href="array.html">陣列</a></li>
+            <li><a href="for.html">迴圈</a></li>
+            <li><a href="if.html">條件式</a></li>
+            <li><a href="box.html">簡易打包</a></li>
+        </ul>
+    </nav>
+    </div>
+    <!--主選單-->
+    <div class="title_style">
+        <sapn class="h_decoration">泡沫排序Bubble Sort</sapn>
+    </div>
+    
+    <div class="center">
+        <p class="TextSize">將含有 N 個數字的數列，進行由小到大的排序，數字兩兩依序互相比較，如果前者數值>後者數值，則前後數值順序交換，<b>共做 N-1 回合</b>。</p>
+    </div>
+    
+    <div class="ani_center">
+        <h3>第一輪</h3>
+        <div class="one">8</div>
+        <div class="two">3</div>
+        <div class="three">2</div>
+        <div class="four">1</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <ul class="TextSize">
+            <li>8 與 3 比較，因為 8 > 3 ，所以 8 和 3 前後交換，變成【 3 8 2 1 】</li>
+            <li>8 與 2 比較，因為 8 > 2 ，所以 8 和 2 前後交換，變成【 3 2 8 1 】</li>
+            <li>8 與 1 比較，因為 8 > 1 ，所以 8 和 1 前後交換，變成【 3 2 1 8 】</li>
+            <li>第一輪的排序為【 3 8 2 1 】</li>
+        </ul>
+    </div>
+    
+    <div class="ani_center"> 
+    <br>
+    <br>
+    <br>
+    <h3>第二輪</h3>     
+        <div class="one_3">3</div>
+        <div class="two_2">2</div>
+        <div class="three_1">1</div>
+        <div class="four_8">8</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <ul class="TextSize">
+            <li>3 與 2 比較，因為 3 > 2 ，所以 3 和 2 前後交換，變成【 2 3 1 8 】</li>
+            <li>3 與 1 比較，因為 3 > 1 ，所以 3 和 1 前後交換，變成【 2 1 3 8 】</li>
+            <li>3 與 8 比較，<b>因為 3 ＜ 8</b> ，<b>所以 3 和 8 順序不變</b>，維持【 2 1 3 8 】</li>
+            <li>第二輪的排序為【 2 1 3 8 】</li>
+        </ul>
+    </div>
+   
+    <div class="ani_center"> 
+        <br>
+        <br>
+        <br>
+        <h3>第三輪</h3>
+            <div class="one_2">2</div>
+            <div class="two_1">1</div>
+            <div class="three_3">3</div>
+            <div class="four_8">8</div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <ul class="TextSize">
+                <li>2 與 1 比較，因為 2 > 1 ，所以 2 和 1 前後交換，變成【 1 2 3 8 】</li>
+                <li>2 與 3 比較，<b>因為 2 ＜ 3</b> ，<b>所以 2 和 3 順序不變</b>，維持【 1 2 3 8 】</li>
+                <li>2 與 8 比較，<b>因為 2 ＜ 8 </b>，<b>所以 2 和 8 順序不變</b>，維持【 1 2 3 8 】</li>
+                <li>第二輪的排序為【 1 2 3 8 】</li>
+            </ul>
+        </div>
+
+        <nav style="text-align:center;">
+            <ul>
+            <li style="border: solid;"><a href="input.html" target="_parent">NEXT</a></li>
+            </ul>
+        </nav>
+        <!--NEXT-->
+</body>
+</html>

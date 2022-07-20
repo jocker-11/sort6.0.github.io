@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>起手式</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="CodeStyle.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--字體-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--字體-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet"> <!--字體-->
+<body>
+
+    <div id="nav_style">
+    <nav id="menu">
+        <ul>
+            <li style="margin-top: 0px;"><a href="main screen.html"><img src="./logo2file/logo_2.png"></a></li>
+            <li><a href="bubble sort.html">泡沫排序</a></li>
+            <li><a href="function box.html" class="LinkColor">起手式</a></li>
+            <li><a href="input.html">輸入與資料型態</a></li>
+            <li><a href="array.html">陣列</a></li>
+            <li><a href="for.html">迴圈</a></li>
+            <li><a href="if.html">條件式</a></li>
+            <li><a href="box.html">簡易打包</a></li>
+        </ul>
+    </nav>
+    </div>
+    <!--主選單-->
+    <div class="title_style">
+        <sapn class="h_decoration">起手式 Hello World！！</sapn>
+    </div>
+
+
+    <div class="example">
+        <h3>Example</h3>
+        <div class="example_code">
+            <code class="CodeColor_1">#include ＜stdio.h＞</code>
+            <br>
+            <br>
+            <code  class="CodeColor_2">int</code> <code class="CodeColor_1">main(void){</code>
+            <code class="CodeColor_2"><blockquote>printf</code> <code class="CodeColor_1">("Hello World！！");</blockquote></code>
+            <code class="CodeColor_2"><blockquote>return 0;</blockquote></code>
+            <code class="CodeColor_1">} </code>
+        </div>
+    </div>
+    <!--code example-->
+
+    <ol>
+    <div class="center">
+        <section>
+        <li><h3>標頭檔 #include ＜stdio.h＞</h3></li>
+            <p class="TextSize">#include ＜stdio.h＞ 這叫做<b>標頭檔</b>，標頭檔有很多種，其中 ＜stdio.h＞ 是負責輸出與輸入的。</p>
+        </section>
+
+        <div class="ExplainCode">
+            <div class="example_code">
+                <code class="CodeColor_1">#include ＜stdio.h＞</code>
+            </div>
+        </div>
+       <!--標頭檔的程式碼-->
+        
+        <section>
+        <li><h3>主函式 main</h3></li>
+        <p class="TextSize">接下來你會看到 int main(void) 的程式碼，我們稱之為函式，main 是這個函式的名稱，也就是所謂的主函式。程式的執行內容大多都在函式裡完成的。
+            每當你的函式完成後，記得一定要用<b> {  } </b>框住此函式的內容。到這裡，你只需要知道 int main(void) 與 #include ＜stdio.h＞ 是寫C語言的起手式即可。</p>
+        </section>
+        <div class="ExplainCode">
+            <div class="example_code">
+                <code  class="CodeColor_2">int</code> <code class="CodeColor_1">main(void){</code>
+                <br>
+                <br>
+                <code class="CodeColor_1">}</code>
+            </div>
+        </div>
+        <!--main函式與程式碼-->
+        <ul>
+            <li class="TextSize">至於為甚麼在 #include ＜stdio.h＞ 與 int main(void) 中間會空一行，這是為了讓程式有可讀性，也就是俗稱的縮排。</li>
+        </ul>
+        <!--補充-->
+
+        <section>
+        <li><h3>輸出 printf</h3></li>
+        <p class="TextSize"> printf 就是輸出的意思，語法是把欲輸出的數值用<b> " " </b>包起來，就像我想輸出 Hello World！！，那我就把這段訊息用 " " 包住，最後的輸出結果也
+            正如我們所預期的一樣 >> Hello World！！</p>
+        </section>
+        <div class="ExplainCode">
+            <div class="example_code">
+                <code class="CodeColor_2">printf</code> <code class="CodeColor_1">("Hello World！！");</code>
+            </div>
+        </div>
+        <!--輸出與程式碼-->
+        <ul>
+            <li class="TextSize">每一個語句都以<b>；</b>做結尾。</li>
+        </ul>
+        <!--補充-->
+
+        <section>
+        <li><h3>程式正常結束 return 0</h3></li>
+        <p class="TextSize"> return 0; 這代表一個函式的正常退出，在這裡不會去深入討論，
+            函式與傳回值的意思，如果有興趣的話，可以搜尋<b> C 語言函式</b>，最後，寫完程式碼後一定要加上 }喔，到這裡，你已經了解 C 語言的標頭檔、main 函式與 printf 輸出瞜，準備好之後，可以點 NEXT，進入到下個單元，輸入與資料型別。</p>
+        </section>
+        <div class="ExplainCode">
+            <div class="example_code">
+                <code class="CodeColor_2">return 0;</code></div>
+        </div>
+        <!--return 0與程式碼-->
+    </div>
+    </ol>
+        <section>
+            <div class="TestCode_fun">
+                <h3>Try it</h3>
+                <p>接下來我們要開始完成泡沫排序的程式碼了，你需要執行六個動作：</p>
+                <ol class="TextSize">
+                    <li>加上標頭檔</li>
+                    <li>加上主函式</li>
+                    <li>讓程式執行【輸出"請輸入任意且互不相等的四個數字："】</li>
+                    <li>最後加上 return 0 代表程式正常結束</li>
+                    <li>記得要有 "{ }" 喔~~</li>
+                    <li>完成後按 "提交"，確認答案</li>
+                    <li>答案確定正確後按 NEXT，進入下個單元</li>
+                </ol>
+                <div class="example_code">
+                <input type="text" name="text"  size="40"; class="CommentText" id="fun_1" value="// 加上stdio.h標頭檔">
+                    <br>
+                    <input type="text" name="text" size="40"; class="CommentText" id="fun_2"  value="// 加上主函式main">
+                    <blockquote><input type="text" name="text" size="40"; class="CommentText" id="fun_3" value="// 輸出：請輸入任意且互不相等的四個數字："></blockquote>
+                    <blockquote><input type="text" name="text" size="40"; class="CommentText" id="fun_4" value="// 程式正常結束"></blockquote>
+                    <input type="text" name="text" size="40";  class="CommentText"  id="fun_5" value="// 程式正常結束">
+                    <br>
+                </div>
+                    <button type="button" id="ans_submit">提交</button>
+                    <button type="button" id="look_ans">看答案</button>
+            </div>
+        </section>
+    </div>
+    <!--測試-->
+
+    <nav style="text-align:center;">
+        <ul>
+        <li style="border: solid;"><a href="input.html" target="_parent">NEXT</a></li>
+        </ul>
+    </nav>
+    <!--NEXT-->
+
+    <script src="ans_1.js"></script>
+</body>
+</head>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>輸入與資料結構</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="CodeStyle.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--字體-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--字體-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet"> <!--字體-->
+</head>
+<body>
+
+    <div id="nav_style">
+    <nav id="menu">
+        <ul>
+            <li style="margin-top: 0px;"><a href="main screen.html"><img src="./logo2file/logo_2.png"></a></li>
+            <li><a href="bubble sort.html">泡沫排序</a></li>
+            <li><a href="function box.html">起手式</a></li>
+            <li><a href="input.html">輸入與資料型態</a></li>
+            <li><a href="array.html">陣列</a></li>
+            <li><a href="for.html">迴圈</a></li>
+            <li><a href="if.html">條件式</a></li>
+            <li><a href="box.html">簡易打包</a></li>
+        </ul>
+    </nav>
+    </div>
+    <!--主選單-->
+
+    <div class="title_style">
+        <sapn class="h_decoration">輸入與資料型態</sapn>
+    </div>
+
+    <div class="center">
+        <section>
+        <p class="TextSize">當然，除了輸出一些文字以外，你還可以讓電腦進行一些運算，再把結果輸出，而在運算的過程中，
+            我們會使用變數來將一些數值儲存起來，且每個變數都有各自的<b>資料型態</b>，在輸出形式也有所不同，但不用擔心，
+            下面我會整理基本的三個變數的資料型態，和說明如何用 printf 輸出變數。
+        </p>
+        </section>
+        <!--前言-->
+
+        <section>
+        <ol class="TextSize">
+            <li><h3>資料型態</h3></li>
+                <ul>
+                    <li>int：儲存整數變數。</li>
+                    <li>float：儲存浮點數變數。</li>
+                    <li>char：儲存一個字母。</li>
+                </ul>
+            <!--第一部分-->    
+
+            <li><h3>宣告語法</h3></li>
+            <div class="ExplainCode">
+                <div class="example_code">
+                    <code  class="CodeColor_1">資料型別  資料型別的名稱=數值;</code>
+                </div>
+            </div>
+            <p>說明一下，這裡的<b> " = " </b>，不是數學的<b>相等</b>，而是<b>賦予</b>的意思，舉一個例子，
+                若我要宣告一個叫 num、值為 5 的整數變數，用程式的寫法為：</p>
+            <div class="ExplainCode">
+               <div class="example_code">
+                    <code  class="CodeColor_2">int </code>
+                    <code class="CodeColor_1">num</code>
+                    <code class="CodeColor_2">=</code>
+                    <code class="CodeColor_1">5;</code>
+                    <code class="CodeColor_2">// 所以現在num為5</code>
+                </div>
+            </div>
+            <!--int句法講解-->
+            <p>下面是宣告字元變數的句法，要注意一點是，若要賦予字元變數值時，要用 ' ' 單引號框住該值。</p>
+            <div class="ExplainCode">
+                <div class="example_code">
+                     <code  class="CodeColor_2">char </code>
+                     <code class="CodeColor_1">num_1</code>
+                     <code class="CodeColor_2">=</code>
+                     <code class="CodeColor_1">'A';</code>
+                     <code class="CodeColor_2">// 所以現在 num_1 為 A</code>
+                 </div>
+             </div>
+             <!--char句法講解-->
+             <p>下面是宣告浮點數變數的句法，浮點數就是有小數點的數。</p>
+            <div class="ExplainCode">
+                <div class="example_code">
+                     <code  class="CodeColor_2">float </code>
+                     <code class="CodeColor_1">num_2</code>
+                     <code class="CodeColor_2">=</code>
+                     <code class="CodeColor_1">8.2;</code>
+                     <code class="CodeColor_2">// 所以現在 num_2 為 8.2</code>
+                 </div>
+             </div>
+            <!--float句法講解-->
+            <!--第二部分-->
+
+            <li><h3>格式說明符</h3></li>
+            <p>剛剛有說，程式不只輸出 Hello World！！ 那麼簡單而已，它還可以透過變數運算，輸出最終運算結果。
+                那，要怎麼用 printf 來輸出變數呢？我們先用 int 變數當作範例，並用前面在介紹 printf 的句法，把 num 放進 printf 裡，
+                看看結果會如何吧~
+            </p>
+            <div class="ExplainCode">
+                <div class="example_code">
+                   <code class="CodeColor_2">printf</code> <code class="CodeColor_1">(num);</code>
+                </div>
+            </div>
+            <p>如果你真的把這行程式碼拿去執行的話，編譯器應該會告訴你<b>語法錯誤之類的訊息！</b>這是因為要用 printf 輸出變數需要用到
+                叫<b>格式說明符</b>的東西，這次我用格式說明符來輸出 num
+            </p>
+            <div class="ExplainCode">
+                <div class="example_code">
+                   <code class="CodeColor_2">printf</code> <code class="CodeColor_1">("%d",num);</code>
+                </div>
+            </div>
+            <p>這次你把這行那去執行話，你會看到輸出結果為 5，當你在做輸出入的時候，你都會需要用到格式說明符，像如果要輸出整數變數的話，
+                就需要在 " " 裡加入<b> %d 或 %i </b>，通常會用 %d 來做整數的格式說明符，在後面再加上<b> ,變數名稱; </b>，這樣就完成了整數的輸出了。
+            </p>
+            <p>浮點數變數的格式說明符為<b> %f </b>，以下是浮點數變數的輸出範例：</p>
+            <div class="ExplainCode">
+                <div class="example_code">
+                   <code class="CodeColor_2">printf</code> <code class="CodeColor_1">("%f",num_2);</code>
+                </div>
+            </div>
+            <p>字元變數的格式說明符為<b> %c </b>，以下是字元變數的輸出範例：</p>
+            <div class="ExplainCode">
+                <div class="example_code">
+                   <code class="CodeColor_2">printf</code> <code class="CodeColor_1">("%c",num_1);</code>
+                </div>
+            </div>
+            <!--第三部分-->
+
+            <li><h3>輸入</h3></li>
+            <p>都講到輸出了，怎麼會少掉輸入呢~ 如果你前面有認真學輸出的話，那恭喜你，輸入跟輸出的語法大同小異拉，只有一些地方要補充的。</p>
+            <div class="ExplainCode">
+                <div class="example_code">
+                   <code class="CodeColor_2">scanf</code> <code class="CodeColor_1">("不同型別的格式說明符", &變數名稱);</code>
+                </div>
+            </div>
+            <p>這裡對你來說比較陌生的應該是<b> & </b>的部分吧~ 它的用意是<b>存取該變數的內存地址</b>，但在這裡不會去深入地址的討論，你只要知道說，
+                這樣做的目的是為了讓電腦能找到你想對哪個變數做輸入的動作，為此你必須告訴電腦說這個變數在哪裡，電腦才能去執行輸入數值在這個變數裡這件事情。
+            </p>
+            <li><h3>輸入兩個以上的數字</h3></li>
+            <div class="ExplainCode">
+                <div class="example_code">
+                    <code  class="CodeColor_2">int </code><code  class="CodeColor_1">x,y;</code>
+                    <br>
+                    <code class="CodeColor_2">scanf</code> <code class="CodeColor_1">("%d%d", &x,&y);</code>
+                </div>
+            </div>
+            <!--第四部分-->
+            <hr>
+            <section>
+                <div class="TestCode">
+                    <h3>Try it</h3>
+                    <p>繼續完成泡沫排序的程式碼，這次的測驗是要你讓使用者輸入四個數字，你需要執行四個動作：</p>
+                    <ol class="TextSize">
+                        <li>宣告 num_1, num_2, num_3, num_4 共四個整數變數</li>
+                        <li>用 scanf 將四個變數做輸入的動作</li>
+                        <li>完成後按 "提交"，確認答案</li>
+                        <li>答案確定正確後按 NEXT，進入下個單元</li>
+                    </ol>
+                    <form action="explain.js" method="get">
+                    <div class="example_code">
+                        <code class="CodeColor_1">#include ＜stdio.h＞</code>
+                        <br>
+                        <code  class="CodeColor_2">int</code> <code class="CodeColor_1">main(void){</code>
+
+                        <blockquote><input type="text" name="text" size="40"; class="CommentText" id="input_1" value="// 宣告四個整數變數"></blockquote>
+
+                        <code class="CodeColor_2"><blockquote>printf</code> <code class="CodeColor_1">("請輸入任意且互不相等的四個數字：");</blockquote></code>
+
+                        <blockquote><input type="text" name="text" size="40"; class="CommentText" id="input_2"  value="// 將四個變數做輸入的動作"></blockquote>
+
+                        <code class="CodeColor_1"><blockquote>return 0;</blockquote></code>
+                        
+                        <code class="CodeColor_1">} </code>
+                    </div>
+                        <button type="button" id="ans_submit">提交</button>
+                        <button type="button" id="look_ans">看答案</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <!--測試-->
+    
+        <nav style="text-align:center;">
+            <ul>
+            <li style="border: solid;"><a href="array.html" target="_parent">NEXT</a></li>
+            </ul>
+        </nav>
+        <!--NEXT-->
+        </ol>
+        </section>
+        <script src="ans_2.js"></script>
+    </div>
+</body>
+</html>
